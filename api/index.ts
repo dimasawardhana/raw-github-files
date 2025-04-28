@@ -1,5 +1,4 @@
 import express, { Request, Response } from "express";
-import ServerlessHttp from "serverless-http";
 
 const app = express();
 
@@ -48,4 +47,4 @@ app.get(
 //   console.log(`Server is running on http://localhost:${port}`);
 // });
 
-module.exports.handler = ServerlessHttp(app);
+export default app;
